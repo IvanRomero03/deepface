@@ -29,6 +29,7 @@ from deepface.basemodels import (
 from deepface.extendedmodels import Age, Gender, Race, Emotion
 from deepface.commons import functions, realtime, distance as dst
 
+
 # -----------------------------------
 # configurations for dependencies
 
