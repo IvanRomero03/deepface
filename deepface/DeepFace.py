@@ -613,9 +613,7 @@ def find_w_face(
     This function applies verification several times and find the identities in a database
 
     Parameters:
-            img_path: exact image path, numpy array (BGR) or based64 encoded image.
-            Source image can have many faces. Then, result will be the size of number of
-            faces in the source image.
+            face (object): Face object from extract_face
 
             db_path (string): You should store some image files in a folder and pass the
             exact folder path to this. A database image can also have many faces.
