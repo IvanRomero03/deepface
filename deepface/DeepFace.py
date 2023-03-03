@@ -1018,6 +1018,35 @@ def extract_faces(
 
     return resp_objs
 
+def addRepresentation(
+        img_content,
+        model_name,
+        normalization,
+        img_path,
+        enforce_detection = False,
+        align = True,
+):
+    with open("faces\\representations_vgg_face.pkl", "wb") as f:
+        representations = pickle.load(f)
+        embedding_obj = represent(
+            img_path=img_content,
+            model_name=model_name,
+            enforce_detection=enforce_detection,
+            detector_backend="skip",
+            align=align,
+            normalization=normalization,
+        )
+
+        img_representation = embedding_obj[0]["embedding"]
+
+        instance = []
+        instance.append(img_path)
+        instance.append(img_representation)
+        representations.append(instance)
+        
+        pickle.dump(representations, f)
+
+    return "Representation added"
 
 # ---------------------------
 # main
