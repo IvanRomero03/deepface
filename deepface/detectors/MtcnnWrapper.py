@@ -1,5 +1,5 @@
 import cv2
-from deepface.detectors import FaceDetector
+from deepface.deepface.detectors import FaceDetector
 
 
 def build_model():

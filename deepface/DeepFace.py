@@ -14,7 +14,7 @@ import cv2
 import tensorflow as tf
 
 # package dependencies
-from deepface.basemodels import (
+from deepface.deepface.basemodels import (
     VGGFace,
     OpenFace,
     Facenet,
@@ -25,8 +25,8 @@ from deepface.basemodels import (
     ArcFace,
     SFace,
 )
-from deepface.extendedmodels import Age, Gender, Race, Emotion
-from deepface.commons import functions, realtime, distance as dst
+from deepface.deepface.extendedmodels import Age, Gender, Race, Emotion
+from deepface.deepface.commons import functions, realtime, distance as dst
 
 # -----------------------------------
 # configurations for dependencies
@@ -1047,6 +1047,8 @@ def addRepresentation(
         pickle.dump(representations, f)
 
     return "Representation added"
+
+    
 
 # ---------------------------
 # main

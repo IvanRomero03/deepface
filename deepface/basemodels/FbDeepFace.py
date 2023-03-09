@@ -2,7 +2,7 @@ import os
 import zipfile
 import gdown
 import tensorflow as tf
-from deepface.commons import functions
+from deepface.deepface.commons import functions
 
 # --------------------------------
 # dependency configuration

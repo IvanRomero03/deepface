@@ -2,8 +2,8 @@ import os
 import gdown
 import cv2
 import pandas as pd
-from deepface.detectors import OpenCvWrapper
-from deepface.commons import functions
+from deepface.deepface.detectors import OpenCvWrapper
+from deepface.deepface.commons import functions
 
 # pylint: disable=line-too-long
 

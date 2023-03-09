@@ -2,8 +2,8 @@ import os
 import gdown
 import numpy as np
 import tensorflow as tf
-from deepface.basemodels import VGGFace
-from deepface.commons import functions
+from deepface.deepface.basemodels import VGGFace
+from deepface.deepface.commons import functions
 
 # ----------------------------------------
 # dependency configurations

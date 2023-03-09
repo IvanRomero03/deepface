@@ -1,7 +1,7 @@
 import os
 import gdown
-from deepface.basemodels import Facenet
-from deepface.commons import functions
+from deepface.deepface.basemodels import Facenet
+from deepface.deepface.commons import functions
 
 
 def loadModel(

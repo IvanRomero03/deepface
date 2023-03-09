@@ -1,7 +1,7 @@
 import os
 import bz2
 import gdown
-from deepface.commons import functions
+from deepface.deepface.commons import functions
 
 
 def build_model():
